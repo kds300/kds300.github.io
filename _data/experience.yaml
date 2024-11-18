@@ -1,0 +1,38 @@
+# Experience Section of CV
+- title: Research Assistant
+  start: May 2020
+  end: Present
+  company: Penn State
+  location: State College, PA
+  description: Studying Spiking Neural Networks, neuromorphic hardware, and audio recognition.
+  highlights:
+    - Developed birdsong audio recognition system with < 5% error rate
+    - Transferred existing neural network model to a spiking neural network
+    - Processed audio timeseries data
+- title: Team Lead
+  start: Summer 2017
+  end: May 2018
+  company: UMass Lowell
+  location: Lowell, MA
+  description: Team lead of Attitude Control and Determination Subsystem (ACDS) for SPACE-HAUC, a student-run cube satellite.
+  highlights:
+    - Ran weekly meetings for ACDS team
+    - Attended weekly meetings with team and project leads
+- title: Project Member
+  start: March 2016
+  end: May 2018
+  company: UMass Lowell
+  location: Lowell, MA
+  description: Member of the ACDS team for SPACE-HAUC
+  highlights:
+    - Designed simulation of satellite attitude control using magnetorquer control rods
+    - Initial testing of light and attitude sensors
+- title: Intern
+  start: May 2017
+  end: August 2017
+  company: Diversified Technologies, Inc.
+  location: Bedford, MA
+  description: Summer internship working with high-voltage, high-power electronics.
+  highlights:
+    - Assisted research of novel propulsion technology
+    - Maintained vacuum chamber for testing

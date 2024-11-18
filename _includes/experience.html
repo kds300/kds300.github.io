@@ -1,0 +1,19 @@
+<!-- Experience Item for Resume / CV -->
+{% for experience in site.data.experience %}
+<section>
+  <h2>{{ experience.title }}</h2>
+  <p class="cv.p">
+    {{ experience.company }}
+    <span style="float: right;">
+      {{ experience.start }} &mdash; {{ experience.end }}
+    </span>
+  </p>
+  <p class="cv.p">{{ experience.location }}</p>
+  <p class="cv.p">{{ experience.description }}</p>
+  <ul class="cv.ul">
+    {% for item in experience.highlights %}
+    <li>{{ item }}</li>
+    {% endfor %}
+  </ul>
+</section>
+{% endfor %}

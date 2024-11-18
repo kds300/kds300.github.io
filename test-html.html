@@ -1,0 +1,38 @@
+---
+permalink: /test-html
+layout: blank
+---
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
+    <link rel="stylesheet" type="text/css" href="{{ '/assets/css/print.css' | relative_url }}" media="print">
+    <link rel="stylesheet" href="/assets/css/styles.css">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+{% seo %}
+    {% include head-custom.html %}
+  </head>
+{% comment %} 
+<head>
+  <link rel="stylesheet" href="/assets/css/style.css">
+  <link rel="stylesheet" type="text/css" href="/assets/css/print.css" media="print">
+</head> {% endcomment %}
+  <body>
+    <div id="container">
+      <div class="inner">
+
+        <p class="red">This is some normal text.</p>
+        <ul class="mylist">
+          <li>Hey there</li>
+          <li>I miss you</li>
+          {% comment %} <li>Aaaaaah</li> {% endcomment %}
+        </ul>
+      </div>
+    </div>
+  </body>
+</html>

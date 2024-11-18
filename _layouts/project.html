@@ -1,0 +1,30 @@
+---
+layout: base
+---
+<html>
+  <header>
+    <h1>Projects</h1>
+    <h2>{{ page.title | default: site.description}}</h2>
+    {% include navigation.html %}
+    {% include project_list.html %}
+  </header>
+
+  <hr>
+
+  {% if page.repository_url %}
+    <p>
+      Code available on GitHub: 
+      <a href="{{ page.repository_url }}">
+      {% if page.repository_name %}
+        kds300/{{ page.repository_name }}
+      {% else %}
+        {{ page.repository_url }}
+      {% endif %}
+      </a>
+    </p>
+  {% endif %}
+
+  {{ content }}
+
+  {% include footer_default.html %}
+</html>

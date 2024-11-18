@@ -1,0 +1,9 @@
+<ul>
+  {% for skillset in site.data.skills %}
+    <li> <strong>{{ skillset.category }}:</strong>
+    {% for skill in skillset.skills %}
+      {{ skill }}{% unless forloop.last %}, {% endunless %}
+    {% endfor %}
+    </li>
+  {% endfor %}
+</ul>

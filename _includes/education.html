@@ -1,0 +1,10 @@
+{% for education in site.data.education %}
+<h2>{{ education.degree }} in {{ education.major }}</h2>
+<p style="text-align: left;">
+  {{ education.university }}
+  <span style="float:right;">
+    {{ education.completed }}
+  </span>
+</p>
+<p>{{ education.location }}</p>
+{% endfor %}
