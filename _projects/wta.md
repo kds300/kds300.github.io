@@ -2,6 +2,7 @@
 title: Winner Takes All
 name: Winner Takes All
 tagline: Competitive spiking neurons.
+order: 2
 ---
 SNN implementation of a Winner-Takes-All (WTA) network.
 While this network doesn't do much by itself, it's a great starting point for learning about Spiking Neural Networks.

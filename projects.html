@@ -2,7 +2,14 @@
 title: Projects
 layout: default
 ---
-{% for project in site.projects %}
-    <a href="{{ project.url }}"><h2>{{ project.name }}</h2></a>
+{% assign ordered_projects = site.projects | sort:"order" %}
+{% for project in ordered_projects %}
+  <div style="margin-bottom:1em">
+    <a href="{{ project.url }}">
+      <h2 style="margin-bottom:0em">
+        {{ project.name }}
+      </h2>
+    </a>
     <div>{{ project.tagline }}</div>
+  </div>
 {% endfor %}
